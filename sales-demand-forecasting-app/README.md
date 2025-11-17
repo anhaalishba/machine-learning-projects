@@ -98,10 +98,3 @@ The dashboard includes a built-in option to export filtered forecasts to CSV.
 Machine Learning Practitioner
 
 ---
-
-## ⭐ Contribution
-
-Pull requests and suggestions are welcome!
-
-```
-
