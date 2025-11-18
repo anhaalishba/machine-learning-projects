@@ -32,7 +32,7 @@ It allows users to filter products, select date ranges, visualize actual vs fore
 
 .
 ├── app.py                      # Main Streamlit app
-├── sales_rf.pkl                # Trained ML model
+├── sales_rff.pkl                # Trained ML model
 ├── supermarket_sales.csv       # Dataset
 ├── requirements.txt            # Project dependencies
 └── README.md                   # Documentation
