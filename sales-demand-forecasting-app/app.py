@@ -10,10 +10,7 @@ rf = joblib.load(model_path)
 
 # Load data
 csv_path = os.path.join(os.path.dirname(__file__), "supermarket_sales.csv")
-if not os.path.exists(csv_path):
-    st.error(f"CSV file not found at {csv_path}. Please upload it to the repo.")
-else:
-    data = pd.read_csv(csv_path)
+data = pd.read_csv(csv_path)
    
 
 
