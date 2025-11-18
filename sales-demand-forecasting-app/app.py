@@ -9,7 +9,8 @@ rf = joblib.load(model_path)
 
 
 # Load data
-data = pd.read_csv("supermarket_sales.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "data", "supermarket_sales.csv")
+data = pd.read_csv(csv_path)
 
 
 st.title("📊 Demand Forecasting Dashboard (Random Forest)")
