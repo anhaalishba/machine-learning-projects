@@ -9,9 +9,15 @@ rf = joblib.load(model_path)
 
 
 # Load data
-csv_path = os.path.join(os.path.dirname(__file__), "data", "supermarket_sales.csv")
-data = pd.read_csv(csv_path)
+csv_path = os.path.join(os.path.dirname(__file__), "supermarket_sales.csv")
 
+# Check if file exists
+if not os.path.exists(csv_path):
+    st.error(f"CSV file not found at {csv_path}. Please upload it to the repo.")
+else:
+    data = pd.read_csv(csv_path)
+    st.success("CSV loaded successfully!")
+    st.write(data.head())
 
 st.title("📊 Demand Forecasting Dashboard (Random Forest)")
 
