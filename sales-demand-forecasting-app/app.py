@@ -4,7 +4,9 @@ import plotly.express as px
 import joblib
 
 # Load model
-rf = joblib.load("sales_rff.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "sales_rff.pkl")
+rf = joblib.load(model_path)
+
 
 # Load data
 data = pd.read_csv("supermarket_sales.csv")
