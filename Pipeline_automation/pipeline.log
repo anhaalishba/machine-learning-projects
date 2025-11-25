@@ -1,0 +1,18 @@
+2025-11-23 09:34:19,773 - INFO - Pipeline run started 
+2025-11-23 09:34:19,818 - INFO - Loaded data\WA_Fn-UseC_-Telco-Customer-Churn.csv
+2025-11-23 09:34:19,818 - INFO - Data shape: (7043, 21)
+2025-11-23 09:34:19,818 - INFO - Columns: ['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+2025-11-23 09:34:19,825 - INFO - Missing per column:
+{'customerID': 0, 'gender': 0, 'SeniorCitizen': 0, 'Partner': 0, 'Dependents': 0, 'tenure': 0, 'PhoneService': 0, 'MultipleLines': 0, 'InternetService': 0, 'OnlineSecurity': 0, 'OnlineBackup': 0, 'DeviceProtection': 0, 'TechSupport': 0, 'StreamingTV': 0, 'StreamingMovies': 0, 'Contract': 0, 'PaperlessBilling': 0, 'PaymentMethod': 0, 'MonthlyCharges': 0, 'TotalCharges': 0, 'Churn': 0}
+2025-11-23 09:34:19,825 - INFO - Dtypes: {'customerID': 'object', 'gender': 'object', 'SeniorCitizen': 'int64', 'Partner': 'object', 'Dependents': 'object', 'tenure': 'int64', 'PhoneService': 'object', 'MultipleLines': 'object', 'InternetService': 'object', 'OnlineSecurity': 'object', 'OnlineBackup': 'object', 'DeviceProtection': 'object', 'TechSupport': 'object', 'StreamingTV': 'object', 'StreamingMovies': 'object', 'Contract': 'object', 'PaperlessBilling': 'object', 'PaymentMethod': 'object', 'MonthlyCharges': 'float64', 'TotalCharges': 'object', 'Churn': 'object'}
+2025-11-23 09:34:19,834 - INFO - Column cardinalities (sample): {'customerID': 7043, 'gender': 2, 'SeniorCitizen': 2, 'Partner': 2, 'Dependents': 2, 'tenure': 73, 'PhoneService': 2, 'MultipleLines': 3, 'InternetService': 3, 'OnlineSecurity': 3, 'OnlineBackup': 3, 'DeviceProtection': 3, 'TechSupport': 3, 'StreamingTV': 3, 'StreamingMovies': 3, 'Contract': 3, 'PaperlessBilling': 2, 'PaymentMethod': 4, 'MonthlyCharges': 1585, 'TotalCharges': 6531, 'Churn': 2}
+2025-11-23 09:34:19,834 - INFO - Detected problem: unsupervised (target: None)
+2025-11-23 09:34:38,264 - INFO - Saved NEW best model: models\model.pkl with metrics {'silhouette': 0.1544487327637652}
+2025-11-23 09:34:38,296 - INFO - Scheduler started. Daily run at 11:30
+2025-11-23 09:43:43,227 - INFO - Pipeline run started 
+2025-11-23 09:43:43,251 - INFO - No new CSVs.
+2025-11-23 09:43:43,251 - INFO - Pipeline skipped: no new data.
+2025-11-23 09:46:01,966 - INFO - Pipeline run started 
+2025-11-23 09:46:01,966 - INFO - No new CSVs.
+2025-11-23 09:46:01,966 - INFO - Pipeline skipped: no new data.
+2025-11-23 09:46:01,966 - INFO - Scheduler started. Daily run at 09:00
