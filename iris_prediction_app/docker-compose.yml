@@ -1,0 +1,23 @@
+version: '3'
+services:
+  iris_api:
+    build:
+      context: .
+      dockerfile: ./app_fastapi  
+    container_name: iris_api
+    ports:
+      - "8000:8000"
+    restart: always
+
+  iris_ui:
+    build:
+      context: .
+      dockerfile: ./app_streamlit
+    container_name: iris_ui
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://iris_api:8000/predict
+    depends_on:
+      - iris_api
+    restart: always
